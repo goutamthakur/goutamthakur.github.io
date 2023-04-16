@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 10;
+    position: sticky;
+}
+.mainContainer{
+    margin: 10px;
+    height: 150vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.aboutMe{
+    width: 50vh;
+    height:50vh;
+    margin: 20px;  
+}
+#aboutMePara{
+    font-size: 1.5rem;
+}
+.socialLinks{
+    width: 50vh;
+    height:50vh;
+    margin: 20px;
+}
+.copyright{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 50px;
+  }
