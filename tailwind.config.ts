@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   darkMode: "class",
@@ -9,23 +8,22 @@ const config: Config = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
       },
+      colors: {
+        bg: "var(--color-bg)",
+        surface: "var(--color-surface)",
+        surfaceAlt: "var(--color-surface-alt)",
+        text: {
+          base: "var(--color-text-primary)",
+          muted: "var(--color-text-secondary)",
+        },
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        border: "var(--color-border)",
+      },
     },
   },
-  plugins: [
-    plugin(function ({ addUtilities }) {
-      addUtilities({
-        ".bg-bg": { backgroundColor: "var(--color-bg)" },
-        ".text-text-primary": { color: "var(--color-text-primary)" },
-        ".text-text-secondary": { color: "var(--color-text-secondary)" },
-        ".bg-primary": { backgroundColor: "var(--color-primary)" },
-        ".bg-secondary": { backgroundColor: "var(--color-secondary)" },
-        ".bg-accent": { backgroundColor: "var(--color-accent)" },
-        ".text-primary": { color: "var(--color-primary)" },
-        ".text-secondary": { color: "var(--color-secondary)" },
-        ".text-accent": { color: "var(--color-accent)" },
-      });
-    }),
-  ],
+  plugins: [],
 };
 
 export default config;

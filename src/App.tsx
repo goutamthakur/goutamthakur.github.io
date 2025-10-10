@@ -1,12 +1,11 @@
-import "./App.css";
-
-function App() {
+export default function App() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center justify-center bg-bg text-text-primary transition-colors">
-        <h1 className="text-4xl font-bold text-primary">Hello, I’m Goutam</h1>
-        <p className="text-text-secondary">
-         Work under progress ☠️
+      <div className="bg-surface text-text-base border border-border p-4">
+        <h1 className="text-primary font-bold">Hello, I’m Goutam</h1>
+        <p className="text-secondary">Work under progress ☠️</p>
+        <p className="text-muted">
+          This is a Tailwind + CSS Variable theme setup.
         </p>
         <button
           onClick={() => document.documentElement.classList.toggle("dark")}
@@ -18,5 +17,3 @@ function App() {
     </>
   );
 }
-
-export default App;
