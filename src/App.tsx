@@ -1,3 +1,5 @@
+import { ThemeToggle } from "./components/common/ThemeToggle";
+
 export default function App() {
   return (
     <>
@@ -7,12 +9,7 @@ export default function App() {
         <p className="text-muted">
           This is a Tailwind + CSS Variable theme setup.
         </p>
-        <button
-          onClick={() => document.documentElement.classList.toggle("dark")}
-          className="mt-4 px-4 py-2 bg-primary text-white rounded hover:bg-secondary transition-colors"
-        >
-          Toggle Theme
-        </button>
+        <ThemeToggle />
       </div>
     </>
   );
