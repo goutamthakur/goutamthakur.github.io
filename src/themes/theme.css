@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
-@layer theme {
-  :root {
-    --color-bg: #f5f5f7;
-    --color-surface: #ffffff;
-    --color-surface-alt: #e8e8ed;
-    --color-text-primary: #1d1d1f;
-    --color-text-secondary: #6e6e73;
-    --color-border: #d2d2d7;
-    --color-primary: #5b4fe8;
-    --color-secondary: #8b7ff5;
-    --color-accent: #ff6b6b;
-  }
+@theme {
+  --color-bg: #f5f5f5;
+  --color-surface: #e6e6e6;
+  --color-surface-alt: #cbc8c4;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-border: #b8b5b1;
+  --color-primary: #5b4fe8;
+  --color-secondary: #8b7ff5;
+  --color-accent: #e85b4f;
+}
 
+@layer base {
   .dark {
-    --color-bg: #0a0a0b;
-    --color-surface: #1c1c1e;
-    --color-surface-alt: #2c2c2e;
-    --color-text-primary: #f5f5f7;
-    --color-text-secondary: #98989d;
-    --color-border: #38383a;
+    --color-bg: #1a1a1a;
+    --color-surface: #2a2a2a;
+    --color-surface-alt: #3a3a3a;
+    --color-text-primary: #e8e5e1;
+    --color-text-secondary: #a8a5a1;
+    --color-border: #4a4a4a;
     --color-primary: #6b5fff;
     --color-secondary: #9b8fff;
-    --color-accent: #ff7b7b;
+    --color-accent: #ff6b5f;
   }
 
   html {
@@ -30,9 +30,26 @@
   }
 
   body {
-    background-color: var(--color-bg);
-    color: var(--color-text-primary);
-    font-family: theme("fontFamily.sans");
-    transition: color 0.3s, background-color 0.3s;
+    @apply bg-bg text-base font-sans;
+  }
+
+  .card {
+    @apply bg-surface rounded-2xl p-4 hover:scale-95 transition-transform duration-200 ease-out;
+  }
+
+  .card-h1 {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .card-h2 {
+    @apply text-base font-semibold mb-2;
+  }
+
+  .card-desc-sm {
+    @apply text-sm text-wrap;
+  }
+
+  .card-desc-base {
+    @apply text-base text-wrap;
   }
 }

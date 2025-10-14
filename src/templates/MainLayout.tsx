@@ -9,7 +9,7 @@ import React from 'react'
 
 const MainLayout = () => {
   return (
-    <div className=''></div>
+    <div className='flex w-full h-full bg-red-50'></div>
   )
 }
 
