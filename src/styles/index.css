@@ -38,18 +38,14 @@
   }
 
   .card-h1 {
-    @apply text-lg font-semibold mb-2;
+    @apply text-xl font-semibold mb-2;
   }
 
   .card-h2 {
-    @apply text-base font-semibold mb-2;
+    @apply text-lg font-semibold mb-2;
   }
 
-  .card-desc-sm {
+  .card-desc {
     @apply text-sm text-wrap;
-  }
-
-  .card-desc-base {
-    @apply text-base text-wrap;
   }
 }

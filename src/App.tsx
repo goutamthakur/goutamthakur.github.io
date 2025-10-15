@@ -1,10 +1,11 @@
-import Sidebar from "./components/Sidebar";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
   return (
-    <>
-      <Sidebar />
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 };
 

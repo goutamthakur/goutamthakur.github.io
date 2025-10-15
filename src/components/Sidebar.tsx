@@ -1,44 +1,45 @@
 import { ExternalLink } from "lucide-react";
 
+const links = [
+  { label: "LinkedIn", href: "https://linkedin.com/in/goutamthakur" },
+  { label: "X (Twitter)", href: "https://x.com/goutamtkr" },
+  { label: "Resume", href: "https://drive.google.com/file/d/1WfUUIxMywb_gvmoMg2Ia-G_f5DP5nuzb/view?usp=sharing" },
+];
+
 const Sidebar = () => {
   return (
-    <div className="flex flex-col m-2 sm:m-2.5 lg:m-4 gap-2 md:w-1/5">
-
-      <div className="bg-surface rounded-2xl p-4">
+    <aside className="flex flex-col m-2 md:m-4 gap-2 md:gap-3 md:w-1/5">
+      <div className="card">
         <h1 className="card-h2">Goutam Thakur</h1>
-        <p className="card-desc-sm">
-          Software developer with 1.4 years of experience as full stack
-          developer working with react, react native, nodejs, express,
-          sequelize, postgres, springboot ...
+        <p className="card-desc">
+          Software developer with 1.4 years of experience working with React,
+          React Native, Node.js, Express, Sequelize, PostgreSQL, Spring Boot...
         </p>
       </div>
 
       <div className="card">
         <h1 className="card-h2">About me</h1>
-        <p className="card-desc-sm">Passion, hobbies ...</p>
+        <p className="card-desc">Passion, hobbies...</p>
       </div>
 
       <div className="card">
         <h1 className="card-h2">Experience</h1>
-        <p className="card-desc-sm">Past work experience ...</p>
+        <p className="card-desc">Past work experience...</p>
       </div>
 
-      <div className="card flex justify-between">
-        <p>LinkedIn</p>
-        <ExternalLink size="20" />
-      </div>
-
-      <div className="card flex justify-between">
-        <p>X</p>
-        <ExternalLink size="20" />
-      </div>
-
-      <div className="card flex justify-between">
-        <p>Resume</p>
-        <ExternalLink size="20" />
-      </div>
-      
-    </div>
+      {links.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card flex justify-between items-center"
+        >
+          <p>{link.label}</p>
+          <ExternalLink size="20" />
+        </a>
+      ))}
+    </aside>
   );
 };
 
