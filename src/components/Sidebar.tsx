@@ -3,12 +3,12 @@ import { ExternalLink } from "lucide-react";
 const links = [
   { label: "LinkedIn", href: "https://linkedin.com/in/goutamthakur" },
   { label: "X (Twitter)", href: "https://x.com/goutamtkr" },
-  { label: "Resume", href: "https://drive.google.com/file/d/1WfUUIxMywb_gvmoMg2Ia-G_f5DP5nuzb/view?usp=sharing" },
+  // { label: "Resume", href: "https://drive.google.com/file/d/1WfUUIxMywb_gvmoMg2Ia-G_f5DP5nuzb/view?usp=sharing" },
 ];
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col m-2 md:m-4 gap-2 md:gap-3 md:w-1/5">
+    <aside className="flex flex-col p-2 md:p-4 gap-2 md:gap-4 md:w-2/5 lg:w-1/5">
       <div className="card">
         <h1 className="card-h2">Goutam Thakur</h1>
         <p className="card-desc">
@@ -19,12 +19,12 @@ const Sidebar = () => {
 
       <div className="card">
         <h1 className="card-h2">About me</h1>
-        <p className="card-desc">Passion, hobbies...</p>
+        <p className="card-desc">Passionate about backend development, gym, cyclying, books</p>
       </div>
 
       <div className="card">
         <h1 className="card-h2">Experience</h1>
-        <p className="card-desc">Past work experience...</p>
+        <p className="card-desc">Working at Arysoft Global Services Pvt. Ltd.</p>
       </div>
 
       {links.map((link) => (
