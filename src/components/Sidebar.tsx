@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 
 const links = [
+  { label: "GitHub", href: "https://github.com/goutamthakur" },
   { label: "LinkedIn", href: "https://linkedin.com/in/goutamthakur" },
   { label: "X (Twitter)", href: "https://x.com/goutamtkr" },
   // { label: "Resume", href: "https://drive.google.com/file/d/1WfUUIxMywb_gvmoMg2Ia-G_f5DP5nuzb/view?usp=sharing" },

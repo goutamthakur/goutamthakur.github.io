@@ -3,4 +3,5 @@ interface ProjectCardDetails {
   desc: string;
   tags: string[];
   image: string;
+  link: string;
 }
